@@ -28,9 +28,16 @@ def ok(o):
     #投稿した後には入力欄の内容を消す
     text.delete(0, tkinter.END)
     
-    #responseを表示するラベル
-    res = tkinter.Label(root, text=r["_code"]+': '+t,width=48,background="#ffffff",font=("","12"))
-    res.place(y=80)
+    ###responseを表示するラベル
+    #投稿が成功した場合
+    if r["_code"]=="Ok":
+        res = tkinter.Label(root, text=r["_code"]+": "+t+"          ",background="#ffffff",font=("","12"))
+        res.place(x=30,y=80)
+        
+    #不成功の場合    
+    else:
+        res = tkinter.Label(root, text="NG ("+r["_code"]+': '+t+")",background="#ff0000",font=("","12"))
+        res.place(x=30,y=80)
     
     #入力欄にフォーカスする
     text.focus_set()
