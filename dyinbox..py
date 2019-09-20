@@ -48,7 +48,7 @@ text.bind('<Key-Escape>', cancel)
 text.focus_set()
 
 #左下のラベル
-h1 = tkinter.Label(root, text="Enter: Post / Esc:Erase",background="#fff",font=("","9"))
+h1 = tkinter.Label(root, text="Enter:Post / Esc:Erase",background="#fff",font=("","9"))
 h1.pack(anchor=tkinter.W,side=tkinter.BOTTOM,padx=30)
 title = tkinter.Label(root, text="[Append to Inbox of Dynalist]",background="#fff",font=("","9"))
 title.pack(anchor=tkinter.W,side=tkinter.BOTTOM,padx=30)
