@@ -1,5 +1,5 @@
 # dyinbox
-DynalistのInboxに1行ずつ書くものです。
+[Dynalist](https://dynalist.io/)のInboxに1行ずつ書くものです。
 
 ![](https://gyazo.com/de14eb1a03e5a052b33d5818566274b8.png)
 
